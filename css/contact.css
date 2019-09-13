@@ -1,0 +1,21 @@
+body {
+}
+font-family: "Roboto", sans-serif;
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  background: #c7ddea;
+}
+
+main {
+  background: #a9a19e;
+}
+
+/*#fab131; orange box, pil #f17949; */
+
+footer {
+  background: #777574;
+}

@@ -185,9 +185,18 @@ nav a:hover {
   width: calc(100% / 3);
   height: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.section-1 h2 {
+  font-size: 40px;
+  line-height: 0;
+  margin: 10px 0 35px 0;
+  opacity: 0.8;
+  align-self: center;
 }
 
 .section-1 span {
@@ -195,14 +204,17 @@ nav a:hover {
   font-size: 30px;
   opacity: 0.4;
   margin-left: 30px;
-  margin-top: 20px;
+  position: absolute;
+  top: 20px;
 }
 
 .section-1 p {
-  width: 70%;
+  /* width: 70%; */
   color: black;
   font-weight: 900;
-  opacity: 0.7;
+  opacity: 0.6;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .section-1__box-1 {
@@ -210,7 +222,8 @@ nav a:hover {
 }
 
 .section-1__box-2,
-.section-1__box-4 .top-page__section-1__box-6 {
+.section-1__box-4,
+.section-1__box-6 {
   background: white;
 }
 
@@ -220,6 +233,16 @@ nav a:hover {
 
 .section-1__box-5 {
   background: #f17949;
+}
+
+.section-1__box-2 p {
+  width: 60%;
+}
+
+.section-1__box-3 p,
+.section-1__box-4 p,
+.section-1__box-5 p {
+  width: 70%;
 }
 
 .section-2 {

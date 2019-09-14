@@ -10,7 +10,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+span {
   font-family: "Playfair Display", serif;
   font-weight: 1000;
 }
@@ -27,7 +28,7 @@ input {
   color: #4d4b4b;
 }
 
-.top-page__grid-container {
+.grid-container {
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
@@ -37,17 +38,17 @@ input {
     "section2" "footer";
 }
 
-.top-page__header {
+.header {
   grid-area: header;
   display: flex;
 }
 
-.top-page__header__box1__container {
+.header__box1-container {
   display: flex;
   width: 50%;
 }
 
-.top-page__header__box1 {
+.header__box1-container__box1 {
   background: #c7ddea;
   width: 100%;
   height: 100%;
@@ -56,7 +57,7 @@ input {
   position: relative;
 }
 
-.top-page__header__box1__txt {
+.header__box1-container__box1__txt {
   width: 58%;
   height: 70%;
   display: flex;
@@ -66,26 +67,26 @@ input {
   margin: 10px auto 0;
 }
 
-.top-page__header__box1__txt_p__container {
+.header__box1-container__box1__txt__p-container {
   margin-top: 20px;
 }
 
-.top-page__header__box1__txt_p__container p {
+.header__box1-container__box1__txt__p-container p {
   display: inline;
   font-size: 14px;
   line-height: 22px;
   font-weight: 800;
 }
 
-.top-page__header__box1__txt_p__container p:nth-of-type(1) {
+.header__box1-container__box1__txt__p-container p:nth-of-type(1) {
   opacity: 0.6;
 }
 
-.top-page__header__box1__txt_p__container p:nth-of-type(2) {
+.header__box1-container__box1__txt__p-container p:nth-of-type(2) {
   color: white;
 }
 
-.top-page__header__box1__txt input {
+.header__box1-container__box1__txt input {
   align-self: flex-start;
   margin-top: 40px;
   padding: 12px 40px;
@@ -94,20 +95,20 @@ input {
   border-bottom: solid 3px #abbdc7;
 }
 
-.top-page__header__box1 img {
+.header__box1-container__box1 img {
   width: 286px;
   height: 279px;
   position: absolute;
   align-self: flex-end;
 }
 
-.top-page__header__box2__container {
+.header__box2-3-container {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.top-page__header__box2__container div {
+.header__box2-3-container div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -116,23 +117,23 @@ input {
   align-items: center;
 }
 
-.top-page__header__box2__container div h2 {
+.header__box2-3-container div h2 {
   color: white;
   margin: 0;
 }
 
-.top-page__header__box2__container div p {
+.header__box2-3-container div p {
   margin: 0;
   font-size: 11px;
   opacity: 0.4;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.top-page__header__box2 {
+.header__box2-3-container__box2 {
   background: #f17949;
 }
 
-.top-page__header__box3 {
+.header__box2-3-container__box3 {
   background: #fab131;
 }
 
@@ -164,51 +165,69 @@ nav a {
   opacity: 0.4;
 }
 
-nav a:active,
 nav a:hover {
   opacity: 1;
 }
 
-.top-page__main {
+.main {
   grid-area: main;
   background: #a9a19e;
 }
 
-.top-page__section-1 {
+.section-1 {
   grid-area: section1;
   background: white;
   display: flex;
   flex-wrap: wrap;
 }
 
-.top-page__section-1 div {
+.section-1 div {
   width: calc(100% / 3);
   height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.top-page__section-1__box-1 {
+.section-1 span {
+  align-self: flex-start;
+  font-size: 30px;
+  opacity: 0.4;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.section-1 p {
+  width: 70%;
+  color: black;
+  font-weight: 900;
+  opacity: 0.7;
+}
+
+.section-1__box-1 {
   background: #c7ddea;
 }
 
-.top-page__section-1__box-2,
-.top-page__section-1__box-4 .top-page__section-1__box-6 {
+.section-1__box-2,
+.section-1__box-4 .top-page__section-1__box-6 {
   background: white;
 }
 
-.top-page__section-1__box-3 {
+.section-1__box-3 {
   background: #ebebeb;
 }
 
-.top-page__section-1__box-5 {
+.section-1__box-5 {
   background: #f17949;
 }
 
-.top-page__section-2 {
+.section-2 {
   grid-area: section2;
   background: #a9a19e;
 }
 
-.top-page__section-2 a {
+.section-2 a {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -216,12 +235,12 @@ nav a:hover {
   text-decoration: none;
 }
 
-.top-page__section-2 img {
+.section-2 img {
   width: 2%;
   margin: 12px auto 2px auto;
 }
 
-.top-page__section-2 p {
+.section-2 p {
   margin: 0;
   color: black;
   font-weight: 900;

@@ -1,21 +1,70 @@
+@import "style.css";
+
+/**
 body {
+  font-family: "Roboto", sans-serif;
 }
-font-family: "Roboto", sans-serif;
 
 h1 {
   font-family: "Playfair Display", serif;
 }
 
-header {
-  background: #c7ddea;
-}
 
 main {
   background: #a9a19e;
 }
 
-/*#fab131; orange box, pil #f17949; */
-
+#fab131; orange box, pil #f17949; */
+/*
 footer {
   background: #777574;
+}
+*/
+
+.grid-container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 380px 68px 1292px 680px 68px 340px;
+  grid-template-areas:
+    "header" "nav" "main" "section1"
+    "section2" "footer";
+
+  min-width: 1000px;
+}
+
+header {
+  background: #c7ddea;
+  background-repeat: no-repeat;
+  background-image: url("../images/img-papa-and-baby.svg");
+  background-position: bottom right;
+  background-position-y: 47px;
+  background-position-x: 85%;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+.box1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+
+.main {
+  background: #a9a19e;
 }

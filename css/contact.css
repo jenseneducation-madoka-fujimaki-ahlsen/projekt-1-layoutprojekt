@@ -66,5 +66,61 @@ header h1 {
 }
 
 .main {
+  height: fit-content;
   background: #a9a19e;
+}
+
+#contact-message {
+  height: 150px;
+  padding: 10px;
+}
+
+input[type="text"] {
+  border: none;
+  margin: 0;
+  padding: 10px;
+}
+
+label {
+  font-size: 10px;
+  color: #4d4b4b;
+  display: block;
+  margin-bottom: 5px;
+}
+
+section {
+  background-image: url(../images/img-map.png);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-light-grey {
+  color: #dad8d8;
+}
+.bgr-white {
+  background-color: #fff;
+}
+
+.font-medium {
+  font-size: 13px;
+}
+.font-large {
+  font-size: 1em;
+}
+.width-100 {
+  width: 100%;
+}
+
+.roboto_c {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.contact-form input[type="button"] {
+  float: right;
 }

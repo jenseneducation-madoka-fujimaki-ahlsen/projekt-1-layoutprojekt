@@ -87,7 +87,7 @@ input {
   color: white;
 }
 
-input {
+input[type="button"] {
   align-self: flex-start;
   margin-top: 40px;
   padding: 12px 40px;

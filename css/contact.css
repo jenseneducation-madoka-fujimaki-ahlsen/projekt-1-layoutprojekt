@@ -25,7 +25,7 @@ footer {
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 380px 68px 1292px 680px 68px 340px;
+  grid-template-rows: 380px 68px 500px 680px 68px 340px;
   grid-template-areas:
     "header" "nav" "main" "section1"
     "section2" "footer";

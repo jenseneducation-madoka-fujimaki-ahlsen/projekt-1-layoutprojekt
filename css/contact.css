@@ -29,8 +29,6 @@ footer {
   grid-template-areas:
     "header" "nav" "main" "section1"
     "section2" "footer";
-
-  min-width: 1000px;
 }
 
 header {

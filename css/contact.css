@@ -1,34 +1,11 @@
 @import "style.css";
 
-/**
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-}
-
-
-main {
-  background: #a9a19e;
-}
-
-#fab131; orange box, pil #f17949; */
-/*
-footer {
-  background: #777574;
-}
-*/
-
 .grid-container {
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 380px 68px 500px 680px 68px 340px;
-  grid-template-areas:
-    "header" "nav" "main" "section1"
-    "section2" "footer";
+  grid-template-rows: 380px 68px 500px 390px 340px;
+  grid-template-areas: "header" "nav" "main" "section1" "footer";
 }
 
 header {
@@ -71,12 +48,14 @@ header h1 {
 #contact-message {
   height: 150px;
   padding: 10px;
+  border-radius: 3px;
 }
 
 input[type="text"] {
   border: none;
   margin: 0;
   padding: 10px;
+  border-radius: 3px;
 }
 
 label {
@@ -88,6 +67,8 @@ label {
 
 section {
   background-image: url(../images/img-map.png);
+  position: relative;
+  grid-area: section1;
 }
 
 .text-white {
@@ -121,4 +102,25 @@ section {
 
 .contact-form input[type="button"] {
   float: right;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 45px;
+  margin: 0;
+}
+#address div {
+  background: #fab131;
+  width: 315px;
+  height: 190px;
+  left: 90px;
+  top: 58px;
+  position: absolute;
+  padding: 15px;
+}
+
+#pointer {
+  position: absolute;
+  left: 465px;
+  top: 162px;
 }

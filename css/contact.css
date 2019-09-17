@@ -4,7 +4,7 @@
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 380px 68px 500px 390px 340px;
+  grid-template-rows: 340px 68px 500px 390px 340px;
   grid-template-areas: "header" "nav" "main" "section1" "footer";
 }
 
@@ -28,20 +28,7 @@ header h1 {
   height: 100%;
 }
 
-.Aligner-item {
-  max-width: 50%;
-}
-
-.Aligner-item--top {
-  align-self: flex-start;
-}
-
-.Aligner-item--bottom {
-  align-self: flex-end;
-}
-
 .main {
-  height: fit-content;
   background: #a9a19e;
 }
 
